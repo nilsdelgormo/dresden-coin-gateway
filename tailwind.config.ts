@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Dresden Coin custom colors
+				dresden: {
+					navy: '#1A1F2C',
+					gold: '#FFB800',
+					silver: '#E0E0E0',
+					light: '#F8F9FD',
+					dark: '#14171F',
 				}
 			},
 			borderRadius: {
@@ -84,13 +93,27 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.6' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'hero-pattern': 'radial-gradient(circle at 20% 30%, rgba(255, 184, 0, 0.15) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(255, 184, 0, 0.1) 0%, transparent 30%)'
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
