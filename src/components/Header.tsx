@@ -22,10 +22,11 @@ const Header = () => {
         <div className="flex items-center gap-4">
           <a
             href="#"
-            className="bg-gradient-to-r from-vivid-purple to-bright-orange text-white font-bold px-7 py-2 rounded-xl shadow-lg text-lg hover:scale-105 transition-transform"
+            className="font-bold px-7 py-2 rounded-xl shadow-lg text-lg hover:scale-105 transition-transform"
             style={{
               background:
-                'linear-gradient(90deg,#8B5CF6 0%,#F97316 100%)'
+                'linear-gradient(90deg,#ea384c 0%,#F97316 100%)',
+              color: '#fff'
             }}
           >
             BUY

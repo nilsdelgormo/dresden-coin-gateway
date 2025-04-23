@@ -17,7 +17,11 @@ const Index = () => {
         <div className="my-12 flex justify-center">
           <a
             href="#"
-            className="bg-dresden-gold text-dresden-navy font-bold text-xl px-10 py-4 rounded-2xl shadow-xl hover:scale-105 transition-transform"
+            className="font-bold text-xl px-10 py-4 rounded-2xl shadow-xl hover:scale-105 transition-transform"
+            style={{
+              background: 'linear-gradient(90deg,#ea384c 0%,#F97316 100%)',
+              color: '#fff'
+            }}
           >
             BUY
           </a>
@@ -26,7 +30,11 @@ const Index = () => {
         <div className="my-12 flex justify-center">
           <a
             href="#"
-            className="bg-dresden-elbe text-white font-bold text-xl px-10 py-4 rounded-2xl shadow-xl hover:scale-105 transition-transform"
+            className="font-bold text-xl px-10 py-4 rounded-2xl shadow-xl hover:scale-105 transition-transform"
+            style={{
+              background: 'linear-gradient(90deg,#ea384c 0%,#F97316 100%)',
+              color: '#fff'
+            }}
           >
             BUY
           </a>
