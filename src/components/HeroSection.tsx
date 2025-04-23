@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
-// Set the new Dresden Coin image as the asset to use everywhere
 const DRESDEN_COIN_IMAGE = "/lovable-uploads/4b090260-d54a-495a-8ea6-f3552de727e7.png";
 
 const HeroSection = () => {
@@ -28,7 +27,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Dresden Coin mit Hover-Scale-Effekt */}
         <div className="mt-16 relative w-full max-w-3xl flex flex-col items-center">
           <div className="w-full h-72 md:h-96 rounded-xl bg-silver-light border border-silver-dark shadow-none flex items-center justify-center overflow-hidden">
             <img
@@ -56,7 +54,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Neuer, eckiger BUY Banner */}
         <div className="mt-32 w-full flex justify-center">
           <div
             className="relative flex items-center justify-between rounded-2xl shadow-xl px-7 py-6 md:px-16 md:py-10 max-w-3xl w-full gap-8 bg-gradient-to-r from-[#ea384c] to-[#F97316] overflow-hidden"
@@ -82,9 +79,6 @@ const HeroSection = () => {
                 src={DRESDEN_COIN_IMAGE}
                 alt="Neues Dresden Coin"
                 className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-full transition-transform hover:scale-110"
-                style={{
-                  boxShadow: "0 8px 40px 0 rgba(26,24,52,.18)",
-                }}
               />
             </div>
           </div>
