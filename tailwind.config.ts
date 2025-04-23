@@ -12,6 +12,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        border: "hsl(var(--border))",
         blue: {
           light: "#eaf1fb",
           DEFAULT: "#1f539e",
@@ -27,7 +28,6 @@ export default {
         black: "#0a0a15",
       },
       backgroundImage: {
-        // Keine bunten Verläufe mehr
         'trusted-silver': 'linear-gradient(135deg, #f6f7fa 0%, #eaf1fb 100%)',
       }
     }
