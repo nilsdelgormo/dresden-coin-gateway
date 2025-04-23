@@ -2,9 +2,8 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
-// Vertrauenswürdiges, ruhiges Bannerbild (Silhouette)
-const HERO_BANNER =
-  "https://images.unsplash.com/photo-1527576539890-dfa815648363?auto=format&fit=crop&w=900&q=80";
+// Dresden Coin Bild statt Banner
+const DRESDEN_COIN_IMAGE = "/lovable-uploads/22a2e6e6-25e6-4920-bc01-f028d884c843.png";
 
 const HeroSection = () => {
   return (
@@ -30,16 +29,16 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Großzügiger Bannerbereich mit Silhouette */}
+        {/* Dresden Coin mit Hover-Scale-Effekt */}
         <div className="mt-16 relative w-full max-w-3xl flex flex-col items-center">
           <div className="w-full h-72 md:h-96 rounded-xl bg-silver-light border border-silver-dark shadow-none flex items-center justify-center overflow-hidden">
             <img
-              src={HERO_BANNER}
-              alt="Silhouetten-Banner"
-              className="w-full h-full object-cover object-bottom grayscale"
+              src={DRESDEN_COIN_IMAGE}
+              alt="Dresden Coin"
+              className="transition-transform duration-300 w-[180px] h-[180px] md:w-[260px] md:h-[260px] object-contain rounded-full bg-white border-4 border-silver shadow-lg hover:scale-110"
+              style={{ boxShadow: "0 8px 40px 0 rgba(26,24,52,.14)" }}
             />
           </div>
-          {/* Stat-Panel schlicht, silbrig */}
           <div className="absolute -bottom-10 left-0 right-0 mx-auto bg-white/95 border border-silver rounded-xl shadow-none p-6 max-w-xl backdrop-blur-lg">
             <div className="flex justify-between items-center">
               <div>
@@ -63,3 +62,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
