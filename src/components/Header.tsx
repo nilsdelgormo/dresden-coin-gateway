@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-8">
         <div className="flex items-center gap-2">
           <img
-            src="/lovable-uploads/22a2e6e6-25e6-4920-bc01-f028d884c843.png"
+            src="/lovable-uploads/bff7e420-3875-455f-b1d2-470261882dbe.png"
             alt="Dresden Coin"
             className="w-8 h-8 rounded-full object-cover bg-white border border-silver"
           />
