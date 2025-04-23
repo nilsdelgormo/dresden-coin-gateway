@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
@@ -29,7 +28,7 @@ const HeroSection = () => {
         <div className="mt-20 relative w-full max-w-3xl">
           <div className="aspect-video rounded-lg bg-gradient-to-br from-dresden-navy to-dresden-dark p-1">
             <div className="w-full h-full rounded-md bg-gradient-to-br from-dresden-gold/20 to-dresden-gold/10 backdrop-blur flex items-center justify-center overflow-hidden">
-              <div className="w-40 h-40 rounded-full bg-gradient-to-r from-dresden-gold to-amber-400 animate-glow flex items-center justify-center">
+              <div className="w-40 h-40 rounded-full bg-gradient-to-r from-dresden-gold to-amber-400 flex items-center justify-center">
                 <div className="text-dresden-navy font-bold text-5xl">DC</div>
               </div>
             </div>
