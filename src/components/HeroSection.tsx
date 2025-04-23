@@ -4,15 +4,8 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-20 pb-20 md:pt-32 md:pb-32 bg-hero-pattern">
+    <section className="relative pt-20 pb-20 md:pt-32 md:pb-32 bg-dresden-pattern">
       <div className="container mx-auto px-4 md:px-8 flex flex-col items-center">
-        <div className="absolute top-20 right-10 w-24 h-24 animate-float hidden md:block">
-          <div className="w-full h-full rounded-full bg-gradient-to-r from-dresden-gold to-amber-400 opacity-20"></div>
-        </div>
-        <div className="absolute bottom-20 left-10 w-16 h-16 animate-float animation-delay-1000 hidden md:block">
-          <div className="w-full h-full rounded-full bg-gradient-to-r from-dresden-gold to-amber-400 opacity-10"></div>
-        </div>
-        
         <div className="text-center max-w-4xl mx-auto">
           <div className="inline-block mb-4 px-3 py-1 bg-dresden-gold/10 text-dresden-gold rounded-full font-medium text-sm">
             The Future of Decentralized Finance
