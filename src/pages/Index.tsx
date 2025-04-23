@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
@@ -15,18 +14,6 @@ const Index = () => {
         <HeroSection />
         <FeaturesSection />
         <RoadmapSection />
-        <div className="my-12 flex justify-center">
-          <a
-            href="#"
-            className="font-bold text-xl px-10 py-4 rounded-2xl shadow-xl hover:scale-105 transition-transform"
-            style={{
-              background: 'linear-gradient(90deg,#ea384c 0%,#F97316 100%)',
-              color: '#fff'
-            }}
-          >
-            BUY
-          </a>
-        </div>
         <FaqSection />
       </main>
       <Footer />

@@ -56,10 +56,41 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+
+        {/* BUY Banner */}
+        <div className="mt-32 w-full flex justify-center">
+          <div
+            className="relative flex items-center justify-between rounded-2xl shadow-xl px-7 py-6 md:px-16 md:py-10 max-w-3xl w-full gap-8 bg-gradient-to-r from-[#ea384c] to-[#F97316] overflow-hidden"
+            style={{ minHeight: 140 }}
+          >
+            <div className="flex flex-col gap-2 md:gap-4">
+              <div className="uppercase font-bold text-xs md:text-sm text-white/70 tracking-wider">
+                Jetzt investieren
+              </div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-sm">
+                BUY DRESDEN COIN
+              </div>
+              <a
+                href="#"
+                className="inline-block mt-4 px-8 py-3 text-lg font-semibold rounded-xl shadow-md bg-white text-[#ea384c] hover:bg-slate-100 transition"
+                style={{ letterSpacing: 1 }}
+              >
+                Kaufen
+              </a>
+            </div>
+            <div className="hidden md:flex items-center">
+              <img
+                src={DRESDEN_COIN_IMAGE}
+                alt="Dresden Coin"
+                className="w-36 h-36 md:w-44 md:h-44 object-contain rounded-full bg-white border-4 border-silver shadow-xl transition-transform hover:scale-110"
+                style={{ boxShadow: "0 8px 40px 0 rgba(26,24,52,.15)" }}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default HeroSection;
-
