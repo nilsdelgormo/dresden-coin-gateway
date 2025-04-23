@@ -30,11 +30,11 @@ const milestones = [
 
 const RoadmapSection = () => {
   return (
-    <section id="roadmap" className="py-20 bg-gradient-to-b from-slate-50 to-white">
+    <section id="roadmap" className="py-20 bg-gradient-to-b from-[#F8F9FD] to-[#ffe29f30]">
       <div className="section-container">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Dresden Coin Roadmap</h2>
-          <p className="text-slate-600">Our journey to revolutionize decentralized finance, one milestone at a time.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dresden-navy">Dresden Coin Roadmap</h2>
+          <p className="text-slate-700">Our journey to revolutionize decentralized finance, one milestone at a time.</p>
         </div>
         
         <div className="relative">
@@ -45,12 +45,12 @@ const RoadmapSection = () => {
             {milestones.map((milestone, index) => (
               <div key={index} className={`md:flex items-start ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
                 <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
-                  <div className="bg-white rounded-xl shadow-sm p-6 border border-slate-100">
+                  <div className="bg-white rounded-xl shadow-md p-6 border border-slate-100">
                     <div className={`inline-block px-3 py-1 rounded-full text-sm font-medium mb-3 ${milestone.completed ? 'bg-green-100 text-green-700' : 'bg-dresden-gold/10 text-dresden-gold'}`}>
                       {milestone.quarter}
                     </div>
-                    <h3 className="text-xl font-bold mb-2">{milestone.title}</h3>
-                    <p className="text-slate-600">{milestone.description}</p>
+                    <h3 className="text-xl font-bold mb-2 text-dresden-navy">{milestone.title}</h3>
+                    <p className="text-slate-700">{milestone.description}</p>
                   </div>
                 </div>
                 
@@ -70,3 +70,4 @@ const RoadmapSection = () => {
 };
 
 export default RoadmapSection;
+

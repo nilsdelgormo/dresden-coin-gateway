@@ -37,21 +37,24 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-20 bg-slate-50">
+    <section
+      id="features"
+      className="py-20 bg-gradient-to-br from-[#ffe29f] via-[#ff719a40] to-[#F8F9FD]"
+    >
       <div className="section-container">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Dresden Coin?</h2>
-          <p className="text-slate-600">Designed with security, speed, and user experience in mind, Dresden Coin offers a comprehensive suite of features.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dresden-navy">Why Choose Dresden Coin?</h2>
+          <p className="text-slate-700 text-lg">Designed with security, speed, and user experience in mind, Dresden Coin offers a comprehensive suite of features.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="feature-card">
-              <div className="rounded-full bg-dresden-gold/10 w-12 h-12 flex items-center justify-center mb-4">
+            <div key={index} className="feature-card shadow-lg transition-shadow hover:shadow-2xl bg-white/90 backdrop-blur">
+              <div className="rounded-full bg-gradient-to-tr from-dresden-gold via-pink-200 to-violet-200 w-12 h-12 flex items-center justify-center mb-4">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-slate-600">{feature.description}</p>
+              <h3 className="text-xl font-semibold mb-2 text-dresden-navy">{feature.title}</h3>
+              <p className="text-slate-700">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -61,3 +64,4 @@ const FeaturesSection = () => {
 };
 
 export default FeaturesSection;
+

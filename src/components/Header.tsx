@@ -15,18 +15,21 @@ const Header = () => {
         
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-slate-600 hover:text-dresden-navy transition-colors">Features</a>
-          <a href="#how-it-works" className="text-slate-600 hover:text-dresden-navy transition-colors">How It Works</a>
           <a href="#roadmap" className="text-slate-600 hover:text-dresden-navy transition-colors">Roadmap</a>
           <a href="#faq" className="text-slate-600 hover:text-dresden-navy transition-colors">FAQ</a>
         </nav>
         
         <div className="flex items-center gap-4">
-          <Button variant="outline" className="hidden md:inline-flex border-dresden-gold text-dresden-gold hover:bg-dresden-gold/10">
-            Connect Wallet
-          </Button>
-          <Button className="bg-dresden-gold hover:bg-amber-500 text-dresden-navy">
-            Get Started
-          </Button>
+          <a
+            href="#"
+            className="bg-gradient-to-r from-vivid-purple to-bright-orange text-white font-bold px-7 py-2 rounded-xl shadow-lg text-lg hover:scale-105 transition-transform"
+            style={{
+              background:
+                'linear-gradient(90deg,#8B5CF6 0%,#F97316 100%)'
+            }}
+          >
+            BUY
+          </a>
         </div>
       </div>
     </header>
@@ -34,3 +37,4 @@ const Header = () => {
 };
 
 export default Header;
+
