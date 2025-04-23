@@ -2,8 +2,8 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
-// Dresden Coin Bild statt Banner
-const DRESDEN_COIN_IMAGE = "/lovable-uploads/22a2e6e6-25e6-4920-bc01-f028d884c843.png";
+// Set the new Dresden Coin image as the asset to use everywhere
+const DRESDEN_COIN_IMAGE = "/lovable-uploads/4b090260-d54a-495a-8ea6-f3552de727e7.png";
 
 const HeroSection = () => {
   return (
@@ -57,13 +57,13 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* BUY Banner */}
+        {/* Neuer, runder BUY Banner */}
         <div className="mt-32 w-full flex justify-center">
           <div
-            className="relative flex items-center justify-between rounded-2xl shadow-xl px-7 py-6 md:px-16 md:py-10 max-w-3xl w-full gap-8 bg-gradient-to-r from-[#ea384c] to-[#F97316] overflow-hidden"
-            style={{ minHeight: 140 }}
+            className="relative flex items-center justify-between rounded-full shadow-xl px-7 py-6 md:px-16 md:py-10 max-w-2xl w-full gap-8 bg-gradient-to-r from-[#ea384c] to-[#F97316] overflow-hidden"
+            style={{ minHeight: 155, borderRadius: 9999 }}
           >
-            <div className="flex flex-col gap-2 md:gap-4">
+            <div className="flex flex-col gap-2 md:gap-4 md:ml-4">
               <div className="uppercase font-bold text-xs md:text-sm text-white/70 tracking-wider">
                 Jetzt investieren
               </div>
@@ -78,12 +78,16 @@ const HeroSection = () => {
                 Kaufen
               </a>
             </div>
-            <div className="hidden md:flex items-center">
+            <div className="flex items-center md:mr-6">
               <img
                 src={DRESDEN_COIN_IMAGE}
-                alt="Dresden Coin"
-                className="w-36 h-36 md:w-44 md:h-44 object-contain rounded-full bg-white border-4 border-silver shadow-xl transition-transform hover:scale-110"
-                style={{ boxShadow: "0 8px 40px 0 rgba(26,24,52,.15)" }}
+                alt="Neues Dresden Coin"
+                className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-full bg-white border-4 border-silver shadow-xl transition-transform hover:scale-110"
+                style={{
+                  boxShadow: "0 8px 40px 0 rgba(26,24,52,.18)",
+                  borderRadius: "50%",
+                  background: "radial-gradient(circle, #fff 70%, #ececec 100%)"
+                }}
               />
             </div>
           </div>
