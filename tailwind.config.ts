@@ -13,6 +13,8 @@ export default {
     extend: {
       colors: {
         border: "hsl(var(--border))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         blue: {
           light: "#eaf1fb",
           DEFAULT: "#1f539e",
