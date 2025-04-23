@@ -12,6 +12,11 @@ export default {
   theme: {
     extend: {
       colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         dresden: {
           // Inspired by Dresden's Frauenkirche (Church) and Baroque architecture
           porcelain: '#F0EAD6',   // Soft cream, reminiscent of Meissen porcelain
@@ -20,6 +25,7 @@ export default {
           elbe: '#4F7CAC',        // River blue
           gold: '#D4AF37',        // Accent gold, like historical decorations
           navy: '#1A1F2C',        // Deep navy, kept from previous design
+          light: '#F8F9FD',       // Light background color for gradient
         }
       },
       backgroundImage: {
@@ -30,4 +36,3 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
