@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
@@ -57,11 +56,11 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Neuer, runder BUY Banner */}
+        {/* Neuer, eckiger BUY Banner */}
         <div className="mt-32 w-full flex justify-center">
           <div
-            className="relative flex items-center justify-between rounded-full shadow-xl px-7 py-6 md:px-16 md:py-10 max-w-2xl w-full gap-8 bg-gradient-to-r from-[#ea384c] to-[#F97316] overflow-hidden"
-            style={{ minHeight: 155, borderRadius: 9999 }}
+            className="relative flex items-center justify-between rounded-2xl shadow-xl px-7 py-6 md:px-16 md:py-10 max-w-3xl w-full gap-8 bg-gradient-to-r from-[#ea384c] to-[#F97316] overflow-hidden"
+            style={{ minHeight: 155 }}
           >
             <div className="flex flex-col gap-2 md:gap-4 md:ml-4">
               <div className="uppercase font-bold text-xs md:text-sm text-white/70 tracking-wider">
@@ -82,11 +81,9 @@ const HeroSection = () => {
               <img
                 src={DRESDEN_COIN_IMAGE}
                 alt="Neues Dresden Coin"
-                className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-full bg-white border-4 border-silver shadow-xl transition-transform hover:scale-110"
+                className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-full transition-transform hover:scale-110"
                 style={{
                   boxShadow: "0 8px 40px 0 rgba(26,24,52,.18)",
-                  borderRadius: "50%",
-                  background: "radial-gradient(circle, #fff 70%, #ececec 100%)"
                 }}
               />
             </div>
