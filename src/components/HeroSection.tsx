@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
 const DRESDEN_COIN_IMAGE = "/lovable-uploads/4b090260-d54a-495a-8ea6-f3552de727e7.png";
+const DRESDEN_CITYSCAPE = "/lovable-uploads/cbf358a8-be1f-46d5-bcc4-2525c741d098.png";
 
 const HeroSection = () => {
   return (
@@ -56,14 +58,29 @@ const HeroSection = () => {
 
         <div className="mt-32 w-full flex justify-center">
           <div
-            className="relative flex items-center justify-between rounded-2xl shadow-xl px-7 py-6 md:px-16 md:py-10 max-w-3xl w-full gap-8 bg-gradient-to-r from-[#ea384c] to-[#F97316] overflow-hidden"
+            className="relative flex flex-col items-center justify-center rounded-2xl shadow-xl px-7 py-6 md:px-16 md:py-10 max-w-3xl w-full overflow-hidden"
             style={{ minHeight: 100 }}
           >
-            <div className="flex flex-col gap-2 md:gap-4 md:ml-4">
-              <div className="uppercase font-bold text-xs md:text-sm text-white/70 tracking-wider">
+            {/* Background Image with Blur Effect */}
+            <div 
+              className="absolute inset-0 z-0"
+              style={{
+                backgroundImage: `url(${DRESDEN_CITYSCAPE})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                filter: 'blur(4px)',
+              }}
+            />
+            
+            {/* Dark overlay for better text readability */}
+            <div className="absolute inset-0 bg-black/30 z-10" />
+
+            {/* Content */}
+            <div className="flex flex-col items-center gap-2 md:gap-4 z-20">
+              <div className="uppercase font-bold text-xs md:text-sm text-white/70 tracking-wider text-center">
                 Jetzt investieren
               </div>
-              <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-sm">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-sm text-center">
                 BUY DRESDEN COIN
               </div>
               <a
